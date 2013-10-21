@@ -1,3 +1,14 @@
-name: Your New Jekyll Site
-markdown: redcarpet
+title: erichansander.com
+subtitle: Eric Hansander's point
+author: Eric Hansander
+
+future: false
 pygments: true
+
+permalink: /b/:title/
+
+markdown: redcarpet
+
+port: 8888
+
+# For more things to configure (including date format), see _includes/custom/*

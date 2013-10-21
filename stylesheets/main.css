@@ -1,0 +1,160 @@
+@media all {
+
+  body {
+    margin: 0 auto;
+    max-width: 35em;
+
+    background-color: #fff;
+    color: #333;
+    font-family: serif;
+    font-size: 125%;
+    font-style: normal;
+    line-height: 1.5em;
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .navigation {
+    color: #888;
+  }
+
+  .navigation a {
+    color: #888;
+    text-decoration: none;
+  }
+
+  #site-navigation {
+    margin-top: 0.25em;
+
+    text-align: center;
+  }
+
+  #site-navigation ul {
+    margin: 0;
+    padding: 0;
+
+    display: inline-block;
+    float: left;
+  }
+
+  #site-navigation li {
+    display: block;
+    float: left;
+
+    list-style: none;
+    text-align: center;
+  }
+
+  #site-navigation li a {
+    padding: 0 0.5em;
+
+    display: block;
+  }
+
+  #site-navigation form {
+    float: right;
+
+    border: 0;
+    font-size: .95em;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0 0.5em;
+  }
+
+  #site-navigation fieldset[role="search"] {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+  }
+
+  #site-navigation input.search {
+    width: 10em;
+
+    color: #888;
+    font-size: 90%;
+  }
+
+
+  #site-header h1,
+  .entry-header h2 {
+    margin: 0;
+
+    font-weight: normal;
+  }
+
+  #site-header h1 {
+    padding-top: 1.5em;
+    padding-bottom: 0.75em;
+
+    border-bottom: 1px solid #000;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .entry-header h2 {
+    font-size: 2em;
+  }
+
+  .entry-meta {
+    color: #888;
+    font-size: 0.75em;
+  }
+
+  #site-header a,
+  #site-header a:visited,
+  .entry-header a,
+  .entry-header a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+
+  #entries {
+    padding: 2em 0.5em;
+  }
+
+  .entry-separator {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    text-align: center;
+  }
+
+
+  #site-footer {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    border-top: 1px solid #000;
+    font-size: 0.75em;
+  }
+
+  #site-footer p {
+    margin: 0;
+
+    line-height: 1.1em;
+  }
+
+  #license-button {
+    margin-right: 1em;
+
+    float: left;
+  }
+
+  #license-icon {
+    height: 31px;
+    width: 88px;
+
+    border-width: 0;
+  }
+}

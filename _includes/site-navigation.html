@@ -1,0 +1,13 @@
+  <nav class="navigation" role="navigation" id="site-navigation">
+    <ul>
+      <li><a href="/about" title="About {{ site.author }}">About</a></li>
+      <li><a href="/archive" title="Post archive">Archive</a></li>
+    </ul>
+
+    <form action="http://google.com/search" method="get">
+      <fieldset role="search">
+        <input type="hidden" name="q" value="site:{{ site.url }}" />
+        <input type="search" name="q" class="search" placeholder="Search" accesskey="/" />
+      </fieldset>
+    </form>
+  </nav><!-- .navigation .site-navigation -->
