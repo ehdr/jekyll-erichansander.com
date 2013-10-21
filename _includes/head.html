@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}{% unless post.title %}{% if site.subtitle %} - {{ site.subtitle }}{% endif %}{% endunless %}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}{% unless page.title %}{% if site.subtitle %} - {{ site.subtitle }}{% endif %}{% endunless %}</title>
   <meta name="author" content="{{ site.author }}" />
   {% if page.description %}<meta name="description" content="{{ page.description | strip_html | condense_spaces }}" />{% endif %}
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% endif %}
