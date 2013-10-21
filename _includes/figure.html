@@ -1,0 +1,4 @@
+<div class="figure-container">
+  {% if figure_link %}<a href="{{ figure_link }}">{% endif %}<img class="figure-image" src="{{ figure_url }}" alt="{{ figure_alt }}"{% if figure_title %} title="{{ figure_title }}"{% endif %}{% if figure_width %} width="{{ figure_width }}"{% endif %}{% if figure_height %} height="{{ figure_height }}"{% endif %} />{% if figure_link %}</a>{% endif %}
+  {% if figure_caption %}<p class="figure-caption">{{ figure_caption }}</p>{% endif %}
+</div>

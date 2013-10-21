@@ -119,6 +119,29 @@
     padding: 2em 0.5em;
   }
 
+  .figure-container {
+    height: auto;
+    margin: 0 auto;
+    max-width: 90%;
+
+    text-align: center;
+  }
+
+  .figure-container img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .lte-ie8 img {
+    width: auto;
+  }
+
+  .figure-caption {
+    color: #888;
+    font-size: 0.75em;
+    line-height: 1em;
+  }
+
   .entry-separator {
     margin-left: auto;
     margin-right: auto;
