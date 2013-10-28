@@ -5,7 +5,7 @@
     max-width: 35em;
 
     background-color: #fff;
-    color: #333;
+    color: #111;
     font-family: serif;
     font-size: 125%;
     font-style: normal;
@@ -20,11 +20,11 @@
 
 
   .navigation {
-    color: #888;
+    color: #555;
   }
 
   .navigation a {
-    color: #888;
+    color: #555;
     text-decoration: none;
   }
 
@@ -79,7 +79,7 @@
   #site-navigation input.search {
     width: 10em;
 
-    color: #888;
+    color: #555;
     font-size: 90%;
   }
 
@@ -105,7 +105,7 @@
   }
 
   .entry-meta {
-    color: #888;
+    color: #555;
     font-size: 0.75em;
   }
 
@@ -141,7 +141,7 @@
   }
 
   .figure-caption {
-    color: #888;
+    color: #555;
     font-size: 0.75em;
     line-height: 1.1em;
   }
