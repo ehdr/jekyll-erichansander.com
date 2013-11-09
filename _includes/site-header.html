@@ -1,3 +1,17 @@
-  <header role="banner" id="site-header">
-    <h1 class="title"><a href="/">{{ site.title }}</a></h1>
-  </header>
+  <header id="site-header" role="banner">
+    <nav id="site-navigation" class="navigation" role="navigation">
+      <ul>
+        <li><a href="/about" title="About {{ site.author }}">About</a></li>
+        <li><a href="/archive" title="Post archive">Archive</a></li>
+      </ul>
+
+      <form action="http://google.com/search" method="get">
+        <fieldset role="search">
+          <input type="hidden" name="q" value="site:{{ site.url | remove: 'http://' | remove: 'https://' }}" />
+          <input type="search" name="q" class="search" placeholder="Search" accesskey="/" />
+        </fieldset>
+      </form>
+    </nav><!-- #site-navigation .navigation -->
+
+    <h1><a href="/">{{ site.title }}</a></h1>
+  </header><!-- #site-header -->

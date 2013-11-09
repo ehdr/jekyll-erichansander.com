@@ -1,16 +1,14 @@
 @media all {
 
   body {
-    margin: 0 auto;
-    max-width: 35em;
-
     background-color: #fff;
     color: #111;
     font-family: serif;
     font-size: 125%;
     font-style: normal;
     line-height: 1.5em;
-
+    margin: 0 auto;
+    max-width: 32em;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -29,30 +27,21 @@
   }
 
   .navigation ul {
+    display: inline-block;
     margin: 0;
     padding: 0;
-
-    display: inline-block;
   }
 
   .navigation li {
     display: block;
     float: left;
-
     list-style: none;
-    text-align: center;
-  }
-
-  .navigation li a {
     padding: 0 0.5em;
-
-    display: block;
+    text-align: center;
   }
 
   #site-navigation {
     margin-top: 0.25em;
-
-    text-align: center;
   }
 
   #site-navigation ul {
@@ -60,9 +49,8 @@
   }
 
   #site-navigation form {
-    float: right;
-
     border: 0;
+    float: right;
     font-size: .95em;
     line-height: 1.2em;
     margin: 0;
@@ -70,37 +58,36 @@
   }
 
   #site-navigation fieldset[role="search"] {
+    border: 0;
     margin: 0;
     padding: 0;
-
-    border: 0;
   }
 
   #site-navigation input.search {
-    width: 10em;
-
     color: #555;
     font-size: 90%;
+    width: 10em;
   }
 
 
-  #site-header h1,
-  .entry-header h2 {
-    margin: 0;
-
+  h1,  h1 a, h1 a:visited,
+  h2,  h2 a, h2 a:visited,
+  h3,  h3 a, h3 a:visited {
+    color: #000;
     font-weight: normal;
+    margin: 0;
+    text-decoration: none;
   }
 
   #site-header h1 {
-    padding-top: 1.5em;
-    padding-bottom: 0.75em;
-
     border-bottom: 1px solid #000;
     font-size: 2.5em;
+    padding-bottom: 0.75em;
+    padding-top: 1.5em;
     text-align: center;
   }
 
-  .entry-header h2 {
+  .entry-header h1 {
     font-size: 2em;
   }
 
@@ -109,29 +96,18 @@
     font-size: 0.75em;
   }
 
-  #site-header a,
-  #site-header a:visited,
-  .entry-header a,
-  .entry-header a:visited {
-    color: #000;
-    text-decoration: none;
-  }
 
-
-  #entries,
-  #single-entry {
+  .main-content {
     padding: 2em 0.5em;
   }
 
-  .figure-container {
+  .figimg {
     height: auto;
     margin: 0 auto;
     max-width: 90%;
-
-    text-align: center;
   }
 
-  .figure-container img {
+  .figimg img {
     height: auto;
     max-width: 100%;
   }
@@ -140,69 +116,65 @@
     width: auto;
   }
 
-  .figure-caption {
+  .figimg figcaption {
     color: #555;
     font-size: 0.75em;
     line-height: 1.1em;
   }
 
   .entry-separator {
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
-    margin-bottom: 2em;
-
     text-align: center;
   }
 
 
-  #page-navigation {
-    position: relative;
+  #post-navigation {
     font-size: 0.9em;
     line-height: 1.1em;
+    position: relative;
     text-align: center;
   }
 
-  #page-navigation .previous {
-    position: absolute;
+  #post-navigation .previous {
     left: 0;
-    width: 40%;
+    position: absolute;
     text-align: left;
+    width: 40%;
   }
 
-  #page-navigation .next {
+  #post-navigation .next {
     position: absolute;
     right: 0;
-    width: 40%;
     text-align: right;
+    width: 40%;
   }
 
+
   #site-footer {
-    padding-top: 1em;
+    border-top: 1px solid #000;
+    font-size: 0.75em;
     padding-bottom: 2em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-
-    border-top: 1px solid #000;
-    font-size: 0.75em;
+    padding-top: 1em;
   }
 
   #site-footer p {
-    margin: 0;
-
     line-height: 1.1em;
+    margin: 0;
   }
 
-  #license-button {
-    margin-right: 1em;
-
+  #site-license-image {
     float: left;
+    margin-right: 1em;
   }
 
-  #license-icon {
+  #site-license-image img {
+    border-width: 0;
     height: 31px;
     width: 88px;
-
-    border-width: 0;
   }
 }
