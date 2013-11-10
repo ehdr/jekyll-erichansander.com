@@ -5,7 +5,7 @@
     <article class="entry" role="main">
       <header class="entry-header">
         <h1 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-        <p class="entry-meta">{% include post/pubdate.html datetime=page.date %}</p>
+        <p class="entry-meta">{% include post/pubdate.html datetime=page.date format="%Y-%m-%d %H:%M" %}</p>
       </header> <!-- .entry-header -->
 
 {{ content }}
