@@ -21,7 +21,8 @@
     color: #555;
   }
 
-  .navigation a {
+  .navigation a,
+  .navigation a:visited {
     color: #555;
     text-decoration: none;
   }
@@ -87,13 +88,38 @@
     text-align: center;
   }
 
-  .entry-header h1 {
+  .entry-header h1,
+  #page-header h1 {
     font-size: 2em;
   }
 
   .entry-meta {
     color: #555;
     font-size: 0.75em;
+  }
+
+
+  .post-archive #entries ul {
+    margin-bottom: 0;
+    padding: 0 1em 0 1em;
+  }
+
+  .post-archive #entries li {
+    display: block;
+    list-style: none;
+  }
+
+  .post-archive #entries li a,
+  .post-archive #entries li a:visited {
+    color: #111;
+    text-decoration: none;
+  }
+
+  .post-archive .entry-meta {
+    color: #555;
+    float: right;
+    font-size: inherit;
+    margin: 0 1em 0 0;
   }
 
 
