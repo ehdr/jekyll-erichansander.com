@@ -5,13 +5,15 @@
     <article class="entry" role="main">
       <header class="entry-header">
         <h1 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-        <p class="entry-meta">{% include post/pubdate.html datetime=page.date format="%Y-%m-%d %H:%M" %}</p>
-      </header> <!-- .entry-header -->
+      </header>
 
 {{ content }}
-    </article><!-- .entry -->
+      <div class="entry-footer meta">
+        <a href="{{ post.url }}">∞ {% include post/pubdate.html datetime=page.date format="%Y-%m-%d" %}</a>
+      </div>
+    </article>
 
-  </section><!-- .main-content -->
+  </section>
 
 {% include site-footer.html %}
 {% include tail.html %}

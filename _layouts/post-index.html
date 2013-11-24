@@ -2,24 +2,24 @@
 {% include site-header.html %}
 
 {{ content }}
-  <section class="main-content" role="main">
+  <section class="post-index main-content" role="main">
     {% for post in site.posts limit:page.max_number_of_posts %}
     <article class="entry">
       <header class="entry-header">
         <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p class="entry-meta">{% include post/pubdate.html datetime=post.date format="%Y-%m-%d %H:%M" %}</p>
-      </header> <!-- .entry-header -->
+      </header>
 
 {{ post.content }}
-    </article><!-- .entry -->
-
-    {% include entry-separator.html %}
+      <div class="entry-footer meta">
+        <a href="{{ post.url }}">∞ {% include post/pubdate.html datetime=post.date format="%Y-%m-%d" %}</a>
+      </div>
+    </article>
     {% endfor %}
 
     <div class="pagination">
       <a href="/b/all">All posts are available in the archive...</a>
-    </div><!-- .pagination -->
-  </section><!-- .main-content -->
+    </div>
+  </section>
 
 {% include site-footer.html %}
 {% include tail.html %}
