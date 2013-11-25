@@ -1,7 +1,11 @@
 url: http://erichansander.com
+feed_url: http://erichansander.com/feed
+
 title: Eric Hansander's point
 title_tooltip: ... now if only I could find a long enough lever...
-author: Eric Hansander
+
+author_name: Eric Hansander
+author_email: ehdr@erichansander.com
 
 future: false
 pygments: true
