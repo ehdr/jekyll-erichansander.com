@@ -1,0 +1,16 @@
+{% include head.html %}
+{% include site-header.html %}
+
+  <section class="main-content">
+    <article class="page" role="main">
+      <header class="page-header">
+        <h1 class="page-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+      </header>
+
+{{ content }}
+    </article>
+
+  </section>
+
+{% include site-footer.html %}
+{% include tail.html %}
