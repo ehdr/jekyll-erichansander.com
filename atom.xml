@@ -6,7 +6,7 @@ permalink: feed/index.xml
   encoding="UTF-8"?>
 <feed
   xmlns="http://www.w3.org/2005/Atom"
-  xml:lang="en">
+  xml:lang="{{ site.lang }}">
 
   <title type="text">{{ site.title | xml_escape }}</title>
   {% if site.subtitle %}<subtitle type="text">{{ site.subtitle | xml_escape }}</subtitle>{% endif %}
