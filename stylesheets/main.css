@@ -168,6 +168,7 @@ blockquote {
 }
 
 .post-archive #entries li {
+  clear: both;
   list-style: none;
 }
 
@@ -183,7 +184,6 @@ blockquote {
 
 .post-archive #entries li .meta {
   float: right;
-  margin: 0 1em 0 0;
 }
 
 
@@ -270,6 +270,23 @@ blockquote {
 @media only screen and (max-width: 700px) {
   body {
     max-width: 94%;
+  }
+
+  .post-archive #entries li {
+    padding: .5em 0;
+  }
+
+  .post-archive #entries li .meta {
+    float: none;
+    font-size: .75em;
+  }
+
+  .post-archive #entries li .meta:before {
+    content: '(';
+  }
+
+  .post-archive #entries li .meta:after {
+    content: ')';
   }
 
   #site-license-text {
