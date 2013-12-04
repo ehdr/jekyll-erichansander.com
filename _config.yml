@@ -6,8 +6,9 @@ lang: en
 title: Eric Hansander's point
 title_tooltip: ... now if only I could find a long enough lever...
 
-author_name: Eric Hansander
-author_email: ehdr@erichansander.com
+owner:
+    name: Eric Hansander
+    email: ehdr@erichansander.com
 
 future: false
 pygments: true
