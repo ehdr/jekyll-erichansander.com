@@ -26,7 +26,6 @@ a:hover {
 
 .navigation a,
 .navigation a:visited {
-  color: inherit;
   font-weight: inherit;
   text-decoration: inherit;
 }
