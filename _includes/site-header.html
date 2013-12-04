@@ -7,7 +7,7 @@
 
       <form action="http://google.com/search" method="get">
         <fieldset role="search">
-          <input type="hidden" name="q" value="site:{{ site.url | remove: 'http://' | remove: 'https://' }}" />
+          <input type="hidden" name="q" value="site:{{ site.url | remove: 'http:' | remove: 'https:' | remove: '//' }}" />
           <input type="search" name="q" class="search" placeholder="Search" accesskey="/" />
         </fieldset>
       </form>
