@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}"{% if site.open_graph %} prefix="og: http://ogp.me/ns#{% if include.type == "article" %} article: http://ogp.me/ns/article#{% endif %}"{% endif %}>
 <head>
   <meta charset="utf-8" />
 
@@ -15,6 +15,7 @@
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+{% if site.open_graph %}{% include open-graph.html type=include.type %}{% endif %}
 {% if site.twitter_cards %}{% include twitter-cards.html %}{% endif %}
 
   <link rel="stylesheet" href="/stylesheets/normalize.css" />

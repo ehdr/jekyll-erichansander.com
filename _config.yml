@@ -18,6 +18,7 @@ owner:
 
 google_analytics_tracking_id: UA-30986603-1
 
+open_graph: true
 twitter_cards: true
 
 future: false
