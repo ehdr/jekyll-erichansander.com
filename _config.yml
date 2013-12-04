@@ -1,5 +1,6 @@
 url: http://erichansander.com
 feed_url: http://erichansander.com/feed
+# twitter: site_twitter_handle
 
 lang: en
 
@@ -16,6 +17,8 @@ owner:
     linkedin: erichansander
 
 google_analytics_tracking_id: UA-30986603-1
+
+twitter_cards: true
 
 future: false
 pygments: true
