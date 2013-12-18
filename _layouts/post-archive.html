@@ -2,16 +2,13 @@
 {% include site-header.html %}
 
   <article class="post-archive main-content" role="main">
-    <header id="page-header">
-      <h1 class="page-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    </header>
-    <section id="entries">
-      <ul>
-      {% for post in site.posts limit:page.max_number_of_posts %}
-      <li><a href="{{ post.url }}"><span class="entry-title">{{ post.title }}</span> <span class="meta">{% include post/pubdate.html datetime=post.date format="%Y-%m-%d" %}</span></a></li>
-      {% endfor %}
-      </ul>
-    </section>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+
+    <ul>
+    {% for post in site.posts limit:page.max_number_of_posts %}
+      <li><a href="{{ post.url }}">{{ post.title }} <span class="post-date">{% include post/pubdate.html datetime=post.date format="%Y-%m-%d" %}</span></a></li>
+    {% endfor %}
+    </ul>
   </article>
 
 {% include site-footer.html %}

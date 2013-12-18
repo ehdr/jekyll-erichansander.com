@@ -1,19 +1,14 @@
 {% include head.html type="article" %}
 {% include site-header.html %}
 
-  <section class="main-content">
-    <article class="entry" role="main">
-      <header class="entry-header">
-        <h1 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-      </header>
+  <article class="post main-content" role="main">
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
 {{ content }}
-      <div class="entry-footer meta">
-        <a href="{{ post.url }}">∞ {% include post/pubdate.html datetime=page.date format="%Y-%m-%d" %}</a>
-      </div>
-    </article>
-
-  </section>
+    <footer>
+      <a href="{{ post.url }}">∞ {% include post/pubdate.html datetime=page.date format="%Y-%m-%d" %}</a>
+    </footer>
+  </article>
 
 {% include site-footer.html %}
 {% include tail.html %}

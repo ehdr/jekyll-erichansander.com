@@ -1,18 +1,15 @@
 {% include head.html %}
 {% include site-header.html %}
 
-{{ content }}
   <section class="post-index main-content" role="main">
     {% for post in site.posts limit:page.max_number_of_posts %}
-    <article class="entry">
-      <header class="entry-header">
-        <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      </header>
+    <article class="post">
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
 {{ post.content }}
-      <div class="entry-footer meta">
+      <footer>
         <a href="{{ post.url }}">∞ {% include post/pubdate.html datetime=post.date format="%Y-%m-%d" %}</a>
-      </div>
+      </footer>
     </article>
     {% endfor %}
 

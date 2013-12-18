@@ -19,23 +19,27 @@ a:hover {
   text-decoration: underline;
 }
 
-
-.navigation {
-  font-weight: 300;
+h1,  h1 a, h1 a:visited, h1 a:hover {
+  color: inherit;
+  font-weight: inherit;
+  margin: 0;
+  text-decoration: inherit;
 }
 
-.navigation a,
-.navigation a:visited {
+
+#site-navigation {
+  font-weight: 300;
+  margin-top: .25em;
+}
+
+#site-navigation a,
+#site-navigation a:visited {
   font-weight: inherit;
   text-decoration: inherit;
 }
 
-.navigation a:hover {
+#site-navigation a:hover {
   text-decoration: underline;
-}
-
-#site-navigation {
-  margin-top: .25em;
 }
 
 #site-navigation ul {
@@ -75,13 +79,6 @@ a:hover {
 }
 
 
-h1,  h1 a, h1 a:visited, h1 a:hover {
-  color: inherit;
-  font-weight: inherit;
-  margin: 0;
-  text-decoration: inherit;
-}
-
 #site-header {
   border-bottom: 1px solid #cfcfcf;
 }
@@ -94,33 +91,30 @@ h1,  h1 a, h1 a:visited, h1 a:hover {
 }
 
 
-.entry h1,
-.page h1 {
+.main-content {
+  padding: 2em 0;
+}
+
+.post h1,
+.page h1,
+.post-archive h1 {
   font-size: 2em;
   font-weight: 500;
   line-height: 1em;
 }
 
-.entry h2,
+.post h2,
 .page h2 {
   font-size: 1.5em;
   font-weight: 500;
   line-height: 1em;
 }
 
-.entry h3,
+.post h3,
 .page h3 {
   font-size: 1em;
   font-weight: 550;
   line-height: 1em;
-}
-
-.meta {
-  font-weight: 300;
-}
-
-.main-content {
-  padding: 2em 0;
 }
 
 blockquote {
@@ -152,37 +146,40 @@ blockquote {
   line-height: 1.1em;
 }
 
-.entry-footer {
+.post footer {
   font-size: .90em;
+  font-weight: 300;
 }
 
-.post-index .entry-footer {
+.post-index footer {
+    font-weight: 300;
     margin-bottom: 4em;
 }
 
 
-.post-archive #entries ul {
+.post-archive ul {
   margin-bottom: 0;
   padding: 0 1em;
 }
 
-.post-archive #entries li {
+.post-archive li {
   clear: both;
   list-style: none;
 }
 
-.post-archive #entries li a,
-.post-archive #entries li a:visited {
+.post-archive li a,
+.post-archive li a:visited {
   color: inherit;
   text-decoration: none;
 }
 
-.post-archive #entries li a:hover {
+.post-archive li a:hover {
   text-decoration: underline;
 }
 
-.post-archive #entries li .meta {
+.post-archive li .post-date {
   float: right;
+  font-weight: 300;
 }
 
 
@@ -271,20 +268,20 @@ blockquote {
     max-width: 94%;
   }
 
-  .post-archive #entries li {
+  .post-archive li {
     padding: .5em 0;
   }
 
-  .post-archive #entries li .meta {
+  .post-archive li .post-date {
     float: none;
     font-size: .75em;
   }
 
-  .post-archive #entries li .meta:before {
+  .post-archive li .post-date:before {
     content: '(';
   }
 
-  .post-archive #entries li .meta:after {
+  .post-archive li .post-date:after {
     content: ')';
   }
 
