@@ -27,67 +27,17 @@ h1,  h1 a, h1 a:visited, h1 a:hover {
 }
 
 
-#site-navigation {
-  font-weight: 300;
-  margin-top: .25em;
-}
-
-#site-navigation a,
-#site-navigation a:visited {
-  font-weight: inherit;
-  text-decoration: inherit;
-}
-
-#site-navigation a:hover {
-  text-decoration: underline;
-}
-
-#site-navigation ul {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-#site-navigation li {
-  display: block;
-  float: left;
-  list-style: none;
-  padding: 0 .5em 0 0;
-  text-align: center;
-}
-
-#site-navigation form {
-  border: 0;
-  float: right;
-  font-size: .95em;
-  line-height: 1.2em;
-  margin: 0;
-  padding: 0;
-}
-
-#site-navigation fieldset[role="search"] {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#site-navigation input.search {
-  font-size: .90em;
-  font-weight: inherit;
-  width: 8em;
-}
-
-
 #site-header {
   border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 1.5em;
+  padding-top: 3em;
 }
 
 #site-header h1 {
   font-size: 2.5em;
   line-height: 1em;
-  padding: 1.5em 2% .75em 2%;
   text-align: center;
+  padding: .5em 2%;
 }
 
 

@@ -1,17 +1,3 @@
   <header id="site-header" role="banner">
-    <nav id="site-navigation" class="clearfix" role="navigation">
-      <ul>
-        <li><a href="/about" title="About {{ site.owner.name }}">About</a></li>
-        <li><a href="/b/all" title="Post archive">Archive</a></li>
-      </ul>
-
-      <form action="http://google.com/search" method="get">
-        <fieldset role="search">
-          <input type="hidden" name="q" value="site:{{ site.url | remove: 'http:' | remove: 'https:' | remove: '//' }}" />
-          <input type="search" name="q" class="search" placeholder="Search" accesskey="/" />
-        </fieldset>
-      </form>
-    </nav>
-
     <h1><a href="/"{% if site.title_tooltip %} title="{{ site.title_tooltip }}"{% endif %}>{{ site.title }}</a></h1>
   </header>
