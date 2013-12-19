@@ -91,7 +91,9 @@ h1,  h1 a, h1 a:visited, h1 a:hover {
 }
 
 
-.main-content {
+.post,
+.post-archive,
+.page {
   padding: 2em 0;
 }
 
@@ -153,7 +155,6 @@ blockquote {
 
 .post-index footer {
     font-weight: 300;
-    margin-bottom: 4em;
 }
 
 
@@ -186,6 +187,7 @@ blockquote {
 .pagination {
   font-weight: 300;
   font-size: .9em;
+  padding: 2em 0 1em 0;
   text-align: center;
 }
 
