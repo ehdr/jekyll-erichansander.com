@@ -31,13 +31,19 @@ h1,  h1 a, h1 a:visited, h1 a:hover {
   border-bottom: 1px solid #cfcfcf;
   padding-bottom: 1.5em;
   padding-top: 3em;
+  text-align: center;
 }
 
-#site-header h1 {
+#site-header #site-title {
   font-size: 2.5em;
   line-height: 1em;
-  text-align: center;
   padding: .5em 2%;
+}
+
+#site-header #site-subtitle {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0;
 }
 
 
@@ -220,6 +226,12 @@ blockquote {
     max-width: 94%;
   }
 
+
+  #site-header #site-subtitle {
+    font-size: .9em;
+  }
+
+
   .post-archive li {
     padding: .5em 0;
   }
@@ -236,6 +248,7 @@ blockquote {
   .post-archive li .post-date:after {
     content: ')';
   }
+
 
   #site-license-text {
     display: none;
