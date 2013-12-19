@@ -4,6 +4,13 @@
   <article class="post-archive main-content" role="main">
     <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
+    <form id="search" action="http://google.com/search" method="get">
+      <fieldset role="search">
+        <input type="hidden" name="q" value="site:{{ site.url | remove: 'http:' | remove: 'https:' | remove: '//' }}" />
+        <input type="search" name="q" class="search" placeholder="Search" accesskey="/" />
+      </fieldset>
+    </form>
+
     <ul>
     {% for post in site.posts limit:page.max_number_of_posts %}
       <li><a href="{{ post.url }}">{{ post.title }} <span class="post-date">{% include post/pubdate.html datetime=post.date format="%Y-%m-%d" %}</span></a></li>
