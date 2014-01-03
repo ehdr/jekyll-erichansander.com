@@ -28,7 +28,6 @@ permalink: feed/index.xml
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>{% if post.author.name %}{{ post.author.name }}{% else %}{{ site.owner.name }}{% endif %}</name>
-      {% if post.author.email %}<email>{{ post.author.email }}</email>{% elsif site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
       <uri>{% if post.author.url %}{{ post.author.url }}{% elsif site.owner.url %}{{ site.owner.url }}{% else %}{{ site.url }}{% endif %}</uri>
     </author>
     {% for tag in post.tags %}<category scheme="{{ site.url }}" term="{{ tag }}" />
