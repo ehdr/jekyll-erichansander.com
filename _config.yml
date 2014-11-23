@@ -17,13 +17,6 @@ owner:
     twitter: erichansander
     linkedin: erichansander
 
-analytics:
-    google_analytics:
-        tracking_id: UA-30986603-1
-        in_head: true
-    facebook_insights:
-        admins: 532689413
-
 open_graph: true
 twitter_cards: true
 
