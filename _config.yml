@@ -10,7 +10,8 @@ subtitle: Things and thoughts <a href="/about">I</a> think you'll like
 
 owner:
     name: Eric Hansander
-    email: ehdr@erichansander.com
+    email: hello@erichansander.com
+    email_with_word_breaks: <span>hello</span><span>@erichansander.com</span>
     google_plus:
         url: EricHansander
         number: 102307140318741294467
